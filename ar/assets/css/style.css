@@ -1,0 +1,436 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Conv_InfinitiBrand-Regular';
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+
+.main-banner .wrapper-parent{
+    width: 100%;
+    height: 100vh;
+    background: #000;
+}
+.main-banner .banner-img-wrapper{
+    position: absolute;
+    z-index: 1; 
+    top: 0px;
+    left: 0px; 
+    bottom: 0px;
+    right: 0px;
+    overflow: hidden;
+    background-size: cover; 
+    background-color: transparent; 
+    background-repeat: no-repeat;
+    background-position: 0% 50%; 
+    background-image: none;
+
+}
+.main-banner .banner-img-wrapper .img-fluid{
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.menu-vline{
+    height: 16px;
+    border-right: 2px solid #888;
+    margin-top: 10px;
+}
+
+nav.navbar.navbar-expand-md.navbar-light {
+    padding: 38px 40px;
+}
+
+.navbar-nav .ml-md-4, .mx-md-4 {
+    margin-left: 0rem!important;
+}
+.navbar-brand img{
+    width: 80px;
+}
+.nav-item .nav-link{
+    color: #fff !important;
+    float: right;
+    font-size: .8rem;
+}
+
+.navbar-toggler {
+	float: right;
+	border: none !important;
+	padding-right: 0;
+}
+.navbar-toggler-icon{
+    /* color: #fff !important; */
+}
+.navbar-toggler:active,
+.navbar-toggler:focus {
+	outline: none;
+}
+.navbar-light .navbar-toggler-icon {
+	width: 24px;
+	height: 17px;
+	background-image: none;
+	position: relative;
+	border-bottom: 3px solid #fff;
+    transition: all 300ms linear;
+}
+.navbar-light .navbar-toggler-icon:after, 
+.navbar-light .navbar-toggler-icon:before{
+	width: 24px;
+	position: absolute;
+	height: 3px;
+	background-color: #fff;
+	top: 0;
+	left: 0;
+	content: '';
+	z-index: 2;
+    transition: all 300ms linear;
+}
+.navbar-light .navbar-toggler-icon:after{
+	top: 7px;
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+	transform: rotate(45deg);
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+	transform: translateY(8px) rotate(-45deg);
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+	border-color: transparent;
+}
+
+
+/* ====================  episode section in banner  ============================ */
+
+.episode-section {
+    position: absolute;
+    bottom: 30px;
+    z-index: 9;
+    width: 100%;
+    left: 0;
+}
+.desktop-episode-section .season-box-1 {
+    padding-top: 40px !important;
+}
+
+.desktop-episode-section .season-number h4 {
+    line-height: .5rem;
+    font-weight: 900;
+    font-size: 0.7rem;
+    font-family: 'Conv_InfinitiBrand-Light';
+    text-transform: uppercase;
+}
+.episode-title h4 {
+    font-size: 1.8rem;
+    font-family: 'Conv_InfinitiBrand-Bold';
+    font-weight: 900;
+    text-transform: uppercase;
+    
+}
+.season-number h4, .episode-title h4 {
+    text-align: right;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 0;
+}
+.season-list form select {
+    text-align: right ;
+    float: right;
+    font-family: 'Conv_InfinitiBrand-Light';
+    background: transparent;
+    color: #fff;
+    width: 20%;
+    height: 26px;
+    font-size: 0.7em;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-weight: 900;
+    background: url(https://pngimage.net/wp-content/uploads/2018/06/white-arrow-down-png-4.png) 0 0 no-repeat;
+    -webkit-appearance: none;
+    /* padding-left: 6px; */
+    background-position-x: 95%;
+    background-size: 15px;
+    background-position-y: 48%;
+}
+
+.desktop-episode-section .vline {
+    height: 90px;
+    margin-left: 0;
+    margin-top: 28px;
+    border-right: 1px solid #fff;
+}
+
+.desktop-episode-section .episode-box-1 {
+    padding-top: 35px;
+}
+.desktop-episode-section .episode-box-1 p {
+    color: aliceblue;
+    text-align: justify;
+    font-size: .9rem;
+}
+.episode-description {
+  
+    display: none;
+}
+
+/* =================== side nav =============== */
+.sidenav {
+    display: none;
+}
+
+/* ====================  footer section ============================ */
+footer.footer-collapse.px-1.py-3._responsive-footer {
+    padding: 0!important;
+}
+._responsive-footer {
+    background: #191919;
+}
+
+.footer-big {
+    padding: 23px 0 20px 0;
+}
+.footer-big .social-container {
+    border-bottom: 1px solid #333;
+}
+.footer-menu {
+    padding: 0 40px;
+}
+.social-footer {
+    text-align: center;
+}
+
+.social-footer h3 {
+    font-size: 0.8rem;
+    font-family: 'Conv_InfinitiBrand-Bold';
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.social-footer ul li {
+    float: left;
+    padding: 10px;
+    padding-top: 0px;
+}
+.footer-menu ul li a {
+    font-size: 12px;
+}
+.social-footer ul li a img {
+    width: 25px;
+}
+.footer-big .footer-menu ul li a, .footer-big p, .footer-big ul li {
+    color: #898b96;
+}
+.social-footer {
+    padding-bottom: 0px;
+}
+
+.social-footer ul{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+ul.copy-right-section-list li {
+    float: left;
+}
+.footer-widget .footer-menu .copy-right-section-list li:last-child {
+    margin-right: 0;
+    float: right;
+}
+.footer-widget .footer-menu .copy-right-section-list li {
+    margin-right: 25px;
+    text-transform: uppercase;
+}
+
+
+
+/*  ==========================    mobile  queries ========================= */
+
+@media (max-width: 767px){
+    .main-banner .banner-img-wrapper{
+        height: 70vh;
+    }
+    nav.navbar.navbar-expand-md.navbar-light {
+        padding: 25px 20px;
+    }
+    .navbar-brand img {
+        width: 55px;
+        height: auto;
+    }
+    .menu-vline{
+        float: right;
+        height: 1px;
+        width: 55px;
+        border-top: 2px solid #888;
+        margin-top: 0px;
+        margin-left: 86%;
+    }
+
+    .episode-section {
+        position: absolute;
+        bottom: 39%;
+        z-index: 5;
+        width: 100%;
+        left: 0;
+        padding: 0px 25px;
+    }
+
+    .episode-description {
+        font-size: 0.9rem;
+        line-height: 1.1rem;
+        display: block;
+        color: #fff;
+        font-family: 'Conv_InfinitiBrand-Regular';
+        font-weight: 100;
+        float: left;
+        padding-right: 25px;
+        text-align: center;
+    }
+    .season-list form select {
+        font-family: 'Conv_InfinitiBrand-Light';
+        color: #fff;
+        width: 100%;
+        height: 40px;
+        font-size: 0.9em;
+        padding: 0 10px;
+        text-transform: uppercase;
+        text-align-last: center;
+    }
+    .vline{
+        display: none;
+    }
+    .desktop-episode-section .episode-box-1 p {
+        color: aliceblue;
+        text-align: center;
+        font-size: .9rem;
+    }
+    .season-number h4{
+        display: none;
+    } 
+    .episode-title h4{
+        text-align: center;
+    }
+    .season-list{
+        margin-top: 10px;
+    }
+
+    .main-banner .wrapper-parent {
+        width: 100%;
+        height: 70vh;
+        background: #000;
+    }
+
+    /* menu of side */
+
+    
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 30%;
+    text-align:center;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #ddd;
+    display: block;
+    font-weight: 100;
+    transition: 0.3s;
+  
+  }
+  
+  .sidenav a:hover{
+    color: #f1f1f1;
+    font-weight: 800;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .sidenav a:last-child{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 20px;
+    font-size: .9rem;
+  }
+
+    /* footer mobile */
+    .footer-big .social-container {        
+        padding-top: 18px;      
+        border-top: none !important; 
+        border-bottom: 1px solid #333;
+    }
+    .footer-big .footer-widget {
+        margin-bottom: 10px;      
+        padding: 0 12px;
+        font-size: 1.2em;
+        font-family: 'Conv_InfinitiBrand-Bold';
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    .social-footer {
+        padding-bottom: 5px !important;
+        text-align: left;
+    }
+    .social-footer h3 {
+        margin-bottom: 15px;
+        font-size: .7rem;
+    }
+    .social-footer ul {
+        padding: 0 0 5px 0;
+        list-style: none;
+        text-align: center;
+        display: flow-root;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-footer ul li {
+        padding: 0 38px 0 0!important;
+        float: left;
+    }
+    .footer-widget .footer-menu .copy-right-section-list li:nth-child(2){
+        margin-left: 17%;
+    }
+    .footer-big .footer-menu ul li a {
+        font-size: 0.7rem !important;
+    }
+    .footer-menu {
+        padding: 0;
+        padding-left: 0;
+    }
+  
+}
+

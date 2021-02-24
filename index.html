@@ -1,0 +1,1311 @@
+
+<!doctype html>
+    <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+    <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+    <!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+    <!--[if IE 9 ]><html class="ie9 no-js"> <![endif]-->
+    <!--[if (gt IE 9)|!(IE)]><!-->
+<html> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="content-language" content="en">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"488cdc789a","applicationID":"263291629","transactionName":"dgxbEEBeX1VdQxdGQ1oRUAJAXl1NF0FZUlJGTFwKVlRL","queueTime":6,"applicationTime":181,"agent":""}</script>
+<script>window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+  <!-- Code snippet to speed up Google Fonts rendering: googlefonts.3perf.com -->
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Gothic+A1:300,400,700" as="fetch" crossorigin="anonymous">
+  <script type="text/javascript">
+  !function(e,n,t){"use strict";var o="https://fonts.googleapis.com/css?family=Gothic+A1:300,400,700",r="__3perf_googleFontsStylesheet";function c(e){(n.head||n.body).appendChild(e)}function a(){var e=n.createElement("link");e.href=o,e.rel="stylesheet",c(e)}function f(e){if(!n.getElementById(r)){var t=n.createElement("style");t.id=r,c(t)}n.getElementById(r).innerHTML=e}e.FontFace&&e.FontFace.prototype.hasOwnProperty("display")?(t[r]&&f(t[r]),fetch(o).then(function(e){return e.text()}).then(function(e){return e.replace(/@font-face {/g,"@font-face{font-display:swap;")}).then(function(e){return t[r]=e}).then(f).catch(a)):a()}(window,document,localStorage);
+  </script>
+  <!-- End of code snippet for Google Fonts -->
+
+  
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="/TpfvPzoaGLYkRbr/6uc+PIiTaePRQzM+FQm9QMmR3DV9icZntazweMRBOyCzFxwLMg0XSzyKg9CyqnG++XTFw==" />
+
+
+
+
+  
+
+
+  <title>The title tag of a web page is meant to be an accurate and concise description of a page's content. | Infiniti 30X</title>
+  <meta name="description" content="The meta description is an HTML attribute that provides a brief summary of a web page. Search engines such as Google often display the meta description.">
+  <!-- Schema.org markup for Google+ -->
+  <meta itemprop="name" content="The title tag of a web page is meant to be an accurate and concise description of a page's content. | Infiniti 30X">
+  <meta itemprop="description" content="The meta description is an HTML attribute that provides a brief summary of a web page. Search engines such as Google often display the meta description.">
+  <meta itemprop="image" content="https://dtsvkkjw40x57.cloudfront.net/198xnull/7471/uploads/ccdcf620-72ea-4b60-aa02-059c31a98cf3.png">
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="The title tag of a web page is meant to be an accurate and concise description of a page's content. | Infiniti 30X" />
+  <meta name="twitter:description" content="The meta description is an HTML attribute that provides a brief summary of a web page. Search engines such as Google often display the meta description." />
+  <meta name="twitter:image" content="https://dtsvkkjw40x57.cloudfront.net/198xnull/7471/uploads/ccdcf620-72ea-4b60-aa02-059c31a98cf3.png" />
+  <!-- Open Graph data -->
+  <meta property="og:title" content="The title tag of a web page is meant to be an accurate and concise description of a page's content." >
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.infiniti-tv.com" >
+  <meta property="og:image:url" content="https://dtsvkkjw40x57.cloudfront.net/1110xnull/7471/uploads/ccdcf620-72ea-4b60-aa02-059c31a98cf3.png" >
+  <meta property="og:image:width" content="740" >
+  <meta property="og:image:height" content="420" >
+  <meta property="og:description" content="The meta description is an HTML attribute that provides a brief summary of a web page. Search engines such as Google often display the meta description." >
+  <meta property="og:site_name" content="Infiniti 30X" />
+  <link rel=“canonical” href="https://www.infiniti-tv.com" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "The title tag of a web page is meant to be an accurate and concise description of a page's content.",
+    "description": "The meta description is an HTML attribute that provides a brief summary of a web page. Search engines such as Google often display the meta description.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Infiniti 30X",
+      "sameAs": "https://www.infiniti-tv.com"
+    }
+  }
+  </script>
+  <script type = 'application/ld+json' >
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "https://www.infiniti-tv.com",
+      "@id": "https://www.infiniti-tv.com/#organization",
+      "name": "Infiniti 30X",
+      "logo": "https://dtsvkkjw40x57.cloudfront.net/198xnull/7471/uploads/ccdcf620-72ea-4b60-aa02-059c31a98cf3.png"
+    }
+  </script>
+
+
+  
+  
+  
+   <!--css links-->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link href="assets/style.css" rel="stylesheet" type="text/css">
+    <!-- script links -->
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>   
+  <script src="assets/js/owl-carousel1.3.3.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/jqueryvide.js" async></script>
+  <script src="assets/js/pyxis.js" async></script>
+  
+</head>
+
+<body>
+  <style>
+    .header .top_menu .top_menu--link,
+    .header .top_menu .top_menu--link:hover,
+    .header .top_menu .dropdown--head-link,
+    .header .top_menu .dropdown--head-link:hover,
+    .top_menu .container a,
+    .top_menu .container a:hover,
+    .top_menu .container .dropdown--body a,
+    .top_menu .container .dropdown--body a:hover {
+      color: #fff;
+    }
+    .hero_banner .top_menu .container a.mobile_menu--link,
+    .hero_banner .top_menu .container a.mobile_menu--link:hover,
+    .hero_banner .top_menu .container .dropdown--body a,
+    .hero_banner .top_menu .container .dropdown--body a:hover {
+      color: #fff;
+    }
+    .top_menu .container .mobile_menu--link,
+    .dropdown--body,
+    .dropdown--body a,
+    .hero_banner .top_menu .container .dropdown--body a {
+      border-color: #fff;
+    }
+    .header .dropdown, .header .fas, .header .top_menu--link {
+      color: #fff;
+    }
+    .header .top_menu .dropdown--action svg>g>g {
+      fill: #fff;
+    }
+    .top_menu .container .mobile_menu--link,
+    .top_menu .container .mobile_menu--exit,
+    .top_menu .container .mobile_menu--exit .far,
+    .dropdown--body {
+      background-color: transparent;
+    }
+    .header {
+      background-color: transparent;
+    }
+    a,
+    .top_menu .container .mobile_menu--link a,
+    .top_menu .container .mobile_menu--link a:hover,
+    .top_menu .container .mobile_menu--link a:focus,
+    .top_menu .container .mobile_menu--link,
+    .top_menu .container .mobile_menu--link:hover {
+      color: #fff;
+    }
+    .top_menu .container .mobile_menu--link a svg>g>g {
+      fill: #fff;
+    }
+    html, body {
+      background-color: #0d0e10;
+    }
+    .btn--light:hover {
+      background-color: #dd3f3f;
+    }
+    .cce--upgrade-button, .btn--primary, .btn--outline {
+      background: #dd3f3f;
+    }
+    .primary-hover-color:hover {
+      color: #dd3f3f !important;
+    }
+    .author--profile {
+      border-color: #dd3f3f;
+      color: #dd3f3f;
+    }
+    .tabs .tab.active {
+      color: #dd3f3f;
+    }
+    .tabs .tab.active svg > g > g {
+      fill: #dd3f3f;
+    }
+    .testimonial svg #theme-1 {
+      fill: #dd3f3f;
+    }
+    .categories-home-page--block h3 {
+      color: ;
+    }
+    .coming-soon--block h3 {
+      color: ;
+    }
+    .cce--document-chapter.cce--video-active .cce--document-icon svg,
+    .cce--document-chapter.cce--video-active .cce--video-icon svg,
+    .cce--document-chapter:hover .cce--document-icon svg,
+    .cce--document-chapter:hover .cce--video-icon svg,
+    .cce--video-chapter.cce--video-active .cce--document-icon svg,
+    .cce--video-chapter.cce--video-active .cce--video-icon svg,
+    .cce--video-chapter:hover .cce--document-icon svg,
+    .cce--video-chapter:hover .cce--video-icon svg {
+      fill: #dd3f3f !important;
+    }
+    .cce .vjs-volume-panel .vjs-volume-level,
+    .cce .vjs-play-progress {
+      background-color: rgba(221, 63, 63, 0.8) !important;
+    }
+    .cce .vjs-load-progress {
+      background-color: rgba(221, 63, 63, 0.2) !important;
+    }
+  </style>
+  
+  
+  <main id="page">
+    <div class="page">
+      <!-- ==============================   banner section ============================================ -->
+
+    <section class="main-banner">
+        <div class="wrapper-parent">
+            <div class="banner-img-wrapper">
+                <img src="https://s3.amazonaws.com/unode1/assets/7471/4EX7HvZTrqOsrDnGwM4M_home-banner.jpg" alt="" class="img-fluid">
+            </div>
+                <div class="container-fluid">
+                        <nav class="navbar navbar-expand-md navbar-light" style="z-index: 9;">
+                                    
+                                <a class="navbar-brand" href="index.html">
+                                    <img src="https://s3.amazonaws.com/unode1/assets/7471/2SXPGXuSFiCBCnQmVjKB_infiniti30x.png" alt="">
+                                </a>	
+                                <!-- old button <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button> -->
+
+                                <button class="navbar-toggler" type="button" onclick="openNav();"  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <!-- menu full width -->
+
+                                <div id="mySidenav" class="sidenav" style="display: none; z-index: 9;">
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                    <a href="#" class="side-links">Book A test drive</a>
+                                    <a href="#" class="side-links">Request a Quote</a>
+                                    <a href="#" class="side-links">Privacy Policy</a>
+                                    <a href="#" class="side-links">© infiniti 2019</a>    
+                                </div>
+
+                                <!-- end menu of side -->
+                                
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav ml-auto py-4 py-md-0">
+                                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
+                                            <a class="nav-link"  href="#">English</a>
+                                        
+                                        </li>
+
+                                        <span class="menu-vline"></span>
+
+                                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 ">
+                                            <a class="nav-link" href="#">العربية</a>
+                                        </li>
+                                    
+                                    
+                                    </ul>
+                                </div>
+                                
+                            </nav>
+                </div>
+            
+<!-- episode section  -->
+
+        
+
+<div class="episode-section desktop-episode-section">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 season-box-1">
+                    <div class="season-number">
+                        <span>
+                            
+                            
+                            <h4 class="season_detail season_199674">
+                            
+                                Season 01
+                            </h4>
+                            
+                            
+                            <h4 class="season_detail season_199675" style="display: none;">
+                            
+                                Season 02
+                            </h4>
+                            
+                        </span>
+                    </div>
+                    <div class="episode-title">
+                        <span>
+                            
+                            
+                            <h4 class="season_detail season_199674">
+                            
+                                Infiniti 30X
+                            </h4>
+                            
+                            
+                            <h4 class="season_detail season_199675" style="display: none;">
+                            
+                                Testing Title 2
+                            </h4>
+                            
+                        </span>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <div class="season-list">
+                        <form action="">
+                            <select name="" id="season_select">
+                                
+                                <option value="199674">Season 01</option>
+                                
+                                <option value="199675">Season 02</option>
+                                
+                            </select>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="vline"> </div>
+
+                <div class="col-lg-4 col-md-4 episode-box-1">
+                    
+                    
+                    <p class="season_detail season_199674">
+                    
+                        A journey of hills and valleys, overcoming challenges, and redefining luxury; truly a store we are familiar with at INFINITI. Join us while we discover the lives of some of the most successful and influential challengers in the region.
+                    </p>
+                    
+                    
+                    <p class="season_detail season_199675" style="display: none;">
+                    
+                        testing
+                    </p>
+                    
+                </div>
+                <div class="d-none">
+                    <div class="vline"> </div>
+
+                    <div class="episode-box-1 popup">
+                        
+
+                        
+
+                        
+                        <div class="season-number-span season_detail season_199674">
+                        
+                            <span class="season-small-heading">Season</span>
+                            <span class="count-season"> 01 </span>
+                        </div>
+                        
+
+                        
+
+                        
+                        <div class="season-number-span season_detail season_199675" style="display: none;">
+                        
+                            <span class="season-small-heading">Season</span>
+                            <span class="count-season"> 02 </span>
+                        </div>
+                        
+                    </div>
+                    <div class="vline"> </div>
+
+                    <div class="col-lg-1 episode-box-2">
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        <div class="episode-span-container season_detail season_199674">
+                        
+                            <span class="episode-small-heading">Episode</span>
+                            <span class="episode-count">01</span>
+                            <span class="of">of</span>
+                            <span class="total-episode">/09</span>
+                        </div>
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        <div class="episode-span-container season_detail season_199675" style="display: none;">
+                        
+                            <span class="episode-small-heading">Episode</span>
+                            <span class="episode-count">01</span>
+                            <span class="of">of</span>
+                            <span class="total-episode">/00</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+        </div> 
+        
+        
+    </section>
+ 
+
+<!--<section class="video-section">
+    <!-- Easy as hell -->
+    <!--<div id="block" style="width: 100%; height: 100vh;">
+         <div 
+                  style="position: absolute; z-index: -1; top: 0px; left: 0px; bottom: 0px; right: 0px; 
+                  overflow: hidden; background-size: cover; background-color: transparent; background-repeat: no-repeat; 
+                  background-position: 0% 50%; background-image: none;">
+                  
+                  
+                  
+                  
+                  <!--<video autoplay muted loop id="myVideo" style="-->
+                  <!--position: absolute;-->
+                  <!--z-index: -1;-->
+                  <!--top: 50%;-->
+                  <!--left: 0%;-->
+                  <!--transform: translate(0%, -50%);-->
+                  <!--visibility: visible;-->
+                  <!--opacity: 1;-->
+                  <!--width: 1522px;-->
+                  <!--height: auto;">-->
+                  <!--    <source src="https://s3.amazonaws.com/unode1/assets/7471/DgtDnsUSfyPmrsIfpsUp_videobg.mp4" type="video/mp4">-->
+                  <!--    <source src="https://s3.amazonaws.com/unode1/assets/7471/zzFiBeIwT9u69MyTIKyi_videobg.webm" type="video/webm">-->
+                  <!--      <source src="https://s3.amazonaws.com/unode1/assets/7471/JtNmOPCZSpx3SiMFnmOB_final_5d7baee599385500142ae315_181672.ogv" type="video/ogv">-->
+                       
+                  <!--  </video>  -->
+                 <!--<img class="banner-img" src="https://s3.amazonaws.com/unode1/assets/7471/C6BK2XXSPqjcBZVSzGGF_bg-car.jpg" />
+        </div>
+        <div class="header-top">
+        <div class="Topcontainer">
+            <div class="header logo float-left">
+<a href="/">
+                                <img src="https://dtsvkkjw40x57.cloudfront.net/nullxnull/7471/uploads/ccdcf620-72ea-4b60-aa02-059c31a98cf3.png" alt="">
+                                </a>
+                            </div>
+                            
+                            <nav class="main-nav float-right d-none d-lg-block">
+              <ul>
+                <li>
+                  <a href="/">Journey of life</a>
+                </li>
+              </ul>
+            </nav>
+        </div>
+        </div>
+        
+
+<div class="episode-section desktop-episode-section">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 season-box-1">
+                    <div class="season-number">
+                        <span>
+                            
+                            
+                            <h4 class="season_detail season_199674">
+                            
+                                Season 01
+                            </h4>
+                            
+                            
+                            <h4 class="season_detail season_199675" style="display: none;">
+                            
+                                Season 02
+                            </h4>
+                            
+                        </span>
+                    </div>
+                    <div class="episode-title">
+                        <span>
+                            
+                            
+                            <h4 class="season_detail season_199674">
+                            
+                                Infiniti 30X
+                            </h4>
+                            
+                            
+                            <h4 class="season_detail season_199675" style="display: none;">
+                            
+                                Testing Title 2
+                            </h4>
+                            
+                        </span>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <div class="season-list">
+                        <form action="">
+                            <select name="" id="season_select">
+                                
+                                <option value="199674">Season 01</option>
+                                
+                                <option value="199675">Season 02</option>
+                                
+                            </select>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="vline"> </div>
+
+                <div class="col-lg-4 col-md-4 episode-box-1">
+                    
+                    
+                    <p class="season_detail season_199674">
+                    
+                        A journey of hills and valleys, overcoming challenges, and redefining luxury; truly a store we are familiar with at INFINITI. Join us while we discover the lives of some of the most successful and influential challengers in the region.
+                    </p>
+                    
+                    
+                    <p class="season_detail season_199675" style="display: none;">
+                    
+                        testing
+                    </p>
+                    
+                </div>
+                <div class="d-none">
+                    <div class="vline"> </div>
+
+                    <div class="episode-box-1 popup">
+                        
+
+                        
+
+                        
+                        <div class="season-number-span season_detail season_199674">
+                        
+                            <span class="season-small-heading">Season</span>
+                            <span class="count-season"> 01 </span>
+                        </div>
+                        
+
+                        
+
+                        
+                        <div class="season-number-span season_detail season_199675" style="display: none;">
+                        
+                            <span class="season-small-heading">Season</span>
+                            <span class="count-season"> 02 </span>
+                        </div>
+                        
+                    </div>
+                    <div class="vline"> </div>
+
+                    <div class="col-lg-1 episode-box-2">
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        <div class="episode-span-container season_detail season_199674">
+                        
+                            <span class="episode-small-heading">Episode</span>
+                            <span class="episode-count">01</span>
+                            <span class="of">of</span>
+                            <span class="total-episode">/09</span>
+                        </div>
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        <div class="episode-span-container season_detail season_199675" style="display: none;">
+                        
+                            <span class="episode-small-heading">Episode</span>
+                            <span class="episode-count">01</span>
+                            <span class="of">of</span>
+                            <span class="total-episode">/00</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+    </div>
+</section>-->
+
+
+<!--  ==================================  section 2 ===============================================   -->
+<section class="video-carousel home_carousel">
+    <div class="col-lg-12">
+        <div class="container1">
+            <div class="row">
+                
+                    <div class="col-md-12">
+                    
+                        <div class="season_detail season_199674 row">
+                    
+                    <div class="video_carusel">
+                        
+                        
+                        
+                            
+                                
+                                
+
+                                
+                                    
+                                    
+                                
+                                    
+                                    
+                                    <div class="item card-container" style="padding: 0; ">
+                                        <div class="card mycard ">
+                                            <div class="card-header1">
+                                               <a href="javascript:void(0)" class="program-btn" data-title="Essa Al Ansari" data-key="1" data-url="/programs/season-1-93bbd0" data-toggle="modal" data-target="#videomodal">  
+                                               <img class="card-img-top" src="https://dtsvkkjw40x57.cloudfront.net/nullxnull/images/programs/208323/horizontal/big_thumbnail.jpg" alt="Card image cap" width="100%" height="220px">
+                                                <span class="playicon">
+                                            <!-- <a href="/programs/season-1-93bbd0?cid=208323"> -->
+                                              
+                                            <!--<img src="https://s3.amazonaws.com/unode1/assets/7471/DFyZvU5cQXe3pcq5pbVA_playicon.png" alt="" >-->
+                                           
+                                         </span>
+</a>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class=" episode-title-mini-h4">Essa Al Ansari</h4>
+                                                <span class="timer">06:09</span>
+                                                <span class="episode-index">01 </span>
+                                                <span class="episode-total">/09</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                
+                                    
+                                    
+                                    <div class="item card-container" style="padding: 0; ">
+                                        <div class="card mycard ">
+                                            <div class="card-header1">
+                                               <a href="javascript:void(0)" class="program-btn" data-title="Faissal El Malak" data-key="2" data-url="/programs/season-1-93bbd0" data-toggle="modal" data-target="#videomodal">  
+                                               <img class="card-img-top" src="https://dtsvkkjw40x57.cloudfront.net/nullxnull/images/programs/208344/horizontal/big_thumbnail.jpg" alt="Card image cap" width="100%" height="220px">
+                                                <span class="playicon">
+                                            <!-- <a href="/programs/season-1-93bbd0?cid=208344"> -->
+                                              
+                                            <!--<img src="https://s3.amazonaws.com/unode1/assets/7471/DFyZvU5cQXe3pcq5pbVA_playicon.png" alt="" >-->
+                                           
+                                         </span>
+</a>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class=" episode-title-mini-h4">Faissal El Malak</h4>
+                                                <span class="timer">07:23</span>
+                                                <span class="episode-index">02 </span>
+                                                <span class="episode-total">/09</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                
+                                    
+                                    
+                                    <div class="item card-container" style="padding: 0; ">
+                                        <div class="card mycard ">
+                                            <div class="card-header1">
+                                               <a href="javascript:void(0)" class="program-btn" data-title="Arabian Panda" data-key="3" data-url="/programs/season-1-93bbd0" data-toggle="modal" data-target="#videomodal">  
+                                               <img class="card-img-top" src="https://dtsvkkjw40x57.cloudfront.net/nullxnull/images/programs/208346/horizontal/big_thumbnail.jpg" alt="Card image cap" width="100%" height="220px">
+                                                <span class="playicon">
+                                            <!-- <a href="/programs/season-1-93bbd0?cid=208346"> -->
+                                              
+                                            <!--<img src="https://s3.amazonaws.com/unode1/assets/7471/DFyZvU5cQXe3pcq5pbVA_playicon.png" alt="" >-->
+                                           
+                                         </span>
+</a>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class=" episode-title-mini-h4">Arabian Panda</h4>
+                                                <span class="timer">07:09</span>
+                                                <span class="episode-index">03 </span>
+                                                <span class="episode-total">/09</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                
+                                    
+                                    
+                                    <div class="item card-container" style="padding: 0; ">
+                                        <div class="card mycard ">
+                                            <div class="card-header1">
+                                               <a href="javascript:void(0)" class="program-btn" data-title="Zainab Al Eqabi" data-key="4" data-url="/programs/season-1-93bbd0" data-toggle="modal" data-target="#videomodal">  
+                                               <img class="card-img-top" src="https://dtsvkkjw40x57.cloudfront.net/nullxnull/images/programs/208345/horizontal/big_thumbnail.jpg" alt="Card image cap" width="100%" height="220px">
+                                                <span class="playicon">
+                                            <!-- <a href="/programs/season-1-93bbd0?cid=208345"> -->
+                                              
+                                            <!--<img src="https://s3.amazonaws.com/unode1/assets/7471/DFyZvU5cQXe3pcq5pbVA_playicon.png" alt="" >-->
+                                           
+                                         </span>
+</a>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class=" episode-title-mini-h4">Zainab Al Eqabi</h4>
+                                                <span class="timer">07:04</span>
+                                                <span class="episode-index">04 </span>
+                                                <span class="episode-total">/09</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                
+                                    
+                                    
+                                    <div class="item card-container" style="padding: 0; ">
+                                        <div class="card mycard ">
+                                            <div class="card-header1">
+                                               <a href="javascript:void(0)" class="program-btn" data-title="Amal Murad" data-key="5" data-url="/programs/season-1-93bbd0" data-toggle="modal" data-target="#videomodal">  
+                                               <img class="card-img-top" src="https://dtsvkkjw40x57.cloudfront.net/nullxnull/images/programs/208347/horizontal/big_thumbnail.jpg" alt="Card image cap" width="100%" height="220px">
+                                                <span class="playicon">
+                                            <!-- <a href="/programs/season-1-93bbd0?cid=208347"> -->
+                                              
+                                            <!--<img src="https://s3.amazonaws.com/unode1/assets/7471/DFyZvU5cQXe3pcq5pbVA_playicon.png" alt="" >-->
+                                           
+                                         </span>
+</a>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class=" episode-title-mini-h4">Amal Murad</h4>
+                                                <span class="timer">08:00</span>
+                                                <span class="episode-index">05 </span>
+                                                <span class="episode-total">/09</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                
+                                    
+                                    
+                                    <div class="item card-container" style="padding: 0; ">
+                                        <div class="card mycard ">
+                                            <div class="card-header1">
+                                               <a href="javascript:void(0)" class="program-btn" data-title="MOH FLOW" data-key="6" data-url="/programs/season-1-93bbd0" data-toggle="modal" data-target="#videomodal">  
+                                               <img class="card-img-top" src="https://dtsvkkjw40x57.cloudfront.net/nullxnull/images/programs/208322/horizontal/big_thumbnail.jpg" alt="Card image cap" width="100%" height="220px">
+                                                <span class="playicon">
+                                            <!-- <a href="/programs/season-1-93bbd0?cid=208322"> -->
+                                              
+                                            <!--<img src="https://s3.amazonaws.com/unode1/assets/7471/DFyZvU5cQXe3pcq5pbVA_playicon.png" alt="" >-->
+                                           
+                                         </span>
+</a>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class=" episode-title-mini-h4">MOH FLOW</h4>
+                                                <span class="timer">09:47</span>
+                                                <span class="episode-index">06 </span>
+                                                <span class="episode-total">/09</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                
+                                    
+                                    
+                                    <div class="item card-container" style="padding: 0; ">
+                                        <div class="card mycard ">
+                                            <div class="card-header1">
+                                               <a href="javascript:void(0)" class="program-btn" data-title="Hanadi" data-key="7" data-url="/programs/season-1-93bbd0" data-toggle="modal" data-target="#videomodal">  
+                                               <img class="card-img-top" src="https://dtsvkkjw40x57.cloudfront.net/nullxnull/images/programs/208316/horizontal/big_thumbnail.jpg" alt="Card image cap" width="100%" height="220px">
+                                                <span class="playicon">
+                                            <!-- <a href="/programs/season-1-93bbd0?cid=208316"> -->
+                                              
+                                            <!--<img src="https://s3.amazonaws.com/unode1/assets/7471/DFyZvU5cQXe3pcq5pbVA_playicon.png" alt="" >-->
+                                           
+                                         </span>
+</a>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class=" episode-title-mini-h4">Hanadi</h4>
+                                                <span class="timer">08:00</span>
+                                                <span class="episode-index">07 </span>
+                                                <span class="episode-total">/09</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                
+                                    
+                                    
+                                    <div class="item card-container" style="padding: 0; ">
+                                        <div class="card mycard ">
+                                            <div class="card-header1">
+                                               <a href="javascript:void(0)" class="program-btn" data-title="SARA" data-key="8" data-url="/programs/season-1-93bbd0" data-toggle="modal" data-target="#videomodal">  
+                                               <img class="card-img-top" src="https://dtsvkkjw40x57.cloudfront.net/nullxnull/images/programs/208317/horizontal/big_thumbnail.jpg" alt="Card image cap" width="100%" height="220px">
+                                                <span class="playicon">
+                                            <!-- <a href="/programs/season-1-93bbd0?cid=208317"> -->
+                                              
+                                            <!--<img src="https://s3.amazonaws.com/unode1/assets/7471/DFyZvU5cQXe3pcq5pbVA_playicon.png" alt="" >-->
+                                           
+                                         </span>
+</a>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class=" episode-title-mini-h4">SARA</h4>
+                                                <span class="timer">08:42</span>
+                                                <span class="episode-index">08 </span>
+                                                <span class="episode-total">/09</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                
+                                    
+                                    
+                                    <div class="item card-container" style="padding: 0; ">
+                                        <div class="card mycard ">
+                                            <div class="card-header1">
+                                               <a href="javascript:void(0)" class="program-btn" data-title="Rhea" data-key="9" data-url="/programs/season-1-93bbd0" data-toggle="modal" data-target="#videomodal">  
+                                               <img class="card-img-top" src="https://dtsvkkjw40x57.cloudfront.net/nullxnull/images/programs/208315/horizontal/big_thumbnail.jpg" alt="Card image cap" width="100%" height="220px">
+                                                <span class="playicon">
+                                            <!-- <a href="/programs/season-1-93bbd0?cid=208315"> -->
+                                              
+                                            <!--<img src="https://s3.amazonaws.com/unode1/assets/7471/DFyZvU5cQXe3pcq5pbVA_playicon.png" alt="" >-->
+                                           
+                                         </span>
+</a>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class=" episode-title-mini-h4">Rhea</h4>
+                                                <span class="timer">07:37</span>
+                                                <span class="episode-index">09 </span>
+                                                <span class="episode-total">/09</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                
+                            
+                        
+                            
+                        
+                    </div>
+                    
+                    
+                    <div class="container">
+    <div class="row feautred-buttons">
+    <div class="col-lg-6 col-md-6"><a href="https://www.infiniti-me.com/services/test-drive.html" class="btn carousel-bottom-button1">BOOK A TEST DRIVE</a></div>
+    <div class="col-lg-6 col-md-6"><a href="https://www.infiniti-me.com/services/get-a-quote.html" class="btn carousel-bottom-button2">REQUEST A QUOTE</a></div></div>
+</div>
+                    
+                    
+                    
+                    
+                    </div>
+                    </div>
+                
+                    <div class="col-md-12">
+                    
+                        <div class="season_detail season_199675 row" style="display: none;">
+                    
+                    <div class="video_carusel">
+                        
+                        
+                        
+                            
+                                
+                                
+
+                                
+                                    
+                                    
+                                
+                            
+                        
+                            
+                        
+                    </div>
+                    
+                    
+                    <div class="container">
+    <div class="row feautred-buttons">
+    <div class="col-lg-6 col-md-6"><a href="https://www.infiniti-me.com/services/test-drive.html" class="btn carousel-bottom-button1">BOOK A TEST DRIVE</a></div>
+    <div class="col-lg-6 col-md-6"><a href="https://www.infiniti-me.com/services/get-a-quote.html" class="btn carousel-bottom-button2">REQUEST A QUOTE</a></div></div>
+</div>
+                    
+                    
+                    
+                    
+                    </div>
+                    </div>
+                
+                                    
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--<section class="tabs--section" data-controller="my-tabs">
+  <div class="tabs--navigations" data-my-tabs-selected-tab="browse">
+    <div class="container">
+      <div class="tabs--navigations-inner">
+        <div class="tabs--navigation featured_category" data-action="click->my-tabs#showBrowse">Browse Programs</div>
+        <div class="tabs--navigation all_platforms" data-action="click->my-tabs#showWatch">Watch Anywhere</div>
+        <div class="tabs--navigation no_commitments" data-action="click->my-tabs#showCommitments">No Commitments</div>
+      </div>
+    </div>
+  </div>
+  <div class="tabs--contents">
+    <div class="tabs-content">
+      <div class="tabs--content" data-target="my-tabs.browse">
+        
+  
+  <div class="featured-category">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 class="featured_category--title"></h2>
+        </div>
+      </div>
+      <div class="justify-content-center">
+        <div class="row">
+          
+            
+<div class="col-sm-12 col-md-6 col-lg-3 card">
+  <a href="/programs/season-1-93bbd0" class="main_poster">
+    <img src="https://dtsvkkjw40x57.cloudfront.net/15xnull/images/programs/199674/horizontal/big_YO3vIbI8SRCUq3Mg72c4_infinity-car.jpg"
+         data-full="https://dtsvkkjw40x57.cloudfront.net/499xnull/images/programs/199674/horizontal/big_YO3vIbI8SRCUq3Mg72c4_infinity-car.jpg"
+         srcset="https://dtsvkkjw40x57.cloudfront.net/499xnull/images/programs/199674/horizontal/big_YO3vIbI8SRCUq3Mg72c4_infinity-car.jpg,
+                 https://dtsvkkjw40x57.cloudfront.net/999xnull/images/programs/199674/horizontal/big_YO3vIbI8SRCUq3Mg72c4_infinity-car.jpg 2x"
+         data-controller="progressive"
+         data-target="progressive.image"
+         alt="Infiniti 30X"
+         class="image preview"/>
+  </a>
+  <span class="title primary-hover-color">
+    <a href="/programs/season-1-93bbd0">Infiniti 30X</a>
+    
+      <div class="duration">01:09:51</div>
+    
+    
+  </span>
+</div>
+
+          
+            
+<div class="col-sm-12 col-md-6 col-lg-3 card">
+  <a href="/programs/season-2-ae2ac6" class="main_poster">
+    <img src="https://dtsvkkjw40x57.cloudfront.net/15xnull/images/programs/199675/horizontal/big_JLqyxvzTR1fYGPeq4FA0_02_rd_spotlight_mobile-2.png"
+         data-full="https://dtsvkkjw40x57.cloudfront.net/499xnull/images/programs/199675/horizontal/big_JLqyxvzTR1fYGPeq4FA0_02_rd_spotlight_mobile-2.png"
+         srcset="https://dtsvkkjw40x57.cloudfront.net/499xnull/images/programs/199675/horizontal/big_JLqyxvzTR1fYGPeq4FA0_02_rd_spotlight_mobile-2.png,
+                 https://dtsvkkjw40x57.cloudfront.net/999xnull/images/programs/199675/horizontal/big_JLqyxvzTR1fYGPeq4FA0_02_rd_spotlight_mobile-2.png 2x"
+         data-controller="progressive"
+         data-target="progressive.image"
+         alt="Testing Title 2"
+         class="image preview"/>
+  </a>
+  <span class="title primary-hover-color">
+    <a href="/programs/season-2-ae2ac6">Testing Title 2</a>
+    
+      <div class="duration">00:00</div>
+    
+    
+  </span>
+</div>
+
+          
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="featured-category--button">
+              <a href="/catalog" class="btn btn--outline btn--width">
+                Watch All
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      </div>
+      <div class="tabs--content" data-target="my-tabs.watch">
+        
+<style>
+  .all-platforms--tv-shape {
+    background-color: #0d0e10;
+  }
+</style>
+<section class="all-platforms all_platforms">
+  <div class="container">
+    <h2 class="all-platforms--title">Experience Citrix across all platforms</h2>
+    <p class="all-platforms--subtitle">HeadPlace is accessible on over 1000 devices including iOS devices, Android devices, MACs, PCs, streaming media boxes such as Roku, Apple TV, Chromecast, and Nexus Player.</p>
+    <div class="all-platforms--devices">
+      <div class="all-platforms--tv">
+        <div class="all-platforms--tv-shape"></div>
+        <div class="all-platforms--inner" style="background: url('https://dtsvkkjw40x57.cloudfront.net/799xnull/assets/4832/sTDZxKzwR97PyU1JZKwJ_all_devices_pavo.jpg') center no-repeat;"></div>
+        
+        <img
+          src="https://dtsvkkjw40x57.cloudfront.net/15xnull/assets/4832/AE2MG0SjR3qXiU8Nz2em_tv-device.png"
+          data-full="https://dtsvkkjw40x57.cloudfront.net/711xnull/assets/4832/AE2MG0SjR3qXiU8Nz2em_tv-device.png"
+          srcset="https://dtsvkkjw40x57.cloudfront.net/1422xnull/assets/4832/AE2MG0SjR3qXiU8Nz2em_tv-device.png 2x"
+          data-controller="progressive"
+          data-target="progressive.image"
+          class="image preview"
+          alt="TV | Experience Citrix across all platforms" />
+      </div>
+      <div class="all-platforms--ipad">
+        <div class="all-platforms--inner" style="background: url('https://dtsvkkjw40x57.cloudfront.net/799xnull/assets/4832/sTDZxKzwR97PyU1JZKwJ_all_devices_pavo.jpg') center no-repeat;"></div>
+        
+        <img
+          src="https://dtsvkkjw40x57.cloudfront.net/15xnull/assets/4832/EUClpad3QZ603QfGvzrA_ipad-device.png"
+          data-full="https://dtsvkkjw40x57.cloudfront.net/271xnull/assets/4832/EUClpad3QZ603QfGvzrA_ipad-device.png"
+          srcset="https://dtsvkkjw40x57.cloudfront.net/543xnull/assets/4832/EUClpad3QZ603QfGvzrA_ipad-device.png 2x"
+          data-controller="progressive"
+          data-target="progressive.image"
+          class="image preview"
+          alt="iPad | Experience Citrix across all platforms" />
+      </div>
+      <div class="all-platforms--macbook">
+        <div class="all-platforms--inner" style="background: url('https://dtsvkkjw40x57.cloudfront.net/799xnull/assets/4832/sTDZxKzwR97PyU1JZKwJ_all_devices_pavo.jpg') center no-repeat;"></div>
+        
+        <img
+          src="https://dtsvkkjw40x57.cloudfront.net/15xnull/assets/4832/xwb8bd6jQhWqtASKEqkD_macbook-device.png"
+          data-full="https://dtsvkkjw40x57.cloudfront.net/441xnull/assets/4832/xwb8bd6jQhWqtASKEqkD_macbook-device.png"
+          srcset="https://dtsvkkjw40x57.cloudfront.net/885xnull/assets/4832/xwb8bd6jQhWqtASKEqkD_macbook-device.png"
+          data-controller="progressive"
+          data-target="progressive.image"
+          class="image preview"
+          alt="Macbook | Experience Citrix across all platforms" />
+      </div>
+      <div class="all-platforms--iphone">
+        <div class="all-platforms--inner" style="background: url('https://dtsvkkjw40x57.cloudfront.net/799xnull/assets/4832/sTDZxKzwR97PyU1JZKwJ_all_devices_pavo.jpg') center no-repeat;"></div>
+        
+        <img
+          src="https://dtsvkkjw40x57.cloudfront.net/15xnull/assets/4832/KIemdpiDTTKC7aLIsdqI_iphone-device.png"
+          data-full="https://dtsvkkjw40x57.cloudfront.net/102xnull/assets/4832/KIemdpiDTTKC7aLIsdqI_iphone-device.png"
+          srcset="https://dtsvkkjw40x57.cloudfront.net/204xnull/assets/4832/KIemdpiDTTKC7aLIsdqI_iphone-device.png 2x"
+          data-controller="progressive"
+          data-target="progressive.image"
+          class="image preview"
+          alt="iPhone | Experience Citrix across all platforms" />
+      </div>
+      
+        
+        <a href="/#all_platforms" class="all-platforms--amazon">
+          <img
+            src="https://dtsvkkjw40x57.cloudfront.net/15xnull/assets/4832/FhBQHKcgSv6RdeM52Bh8_amazon-device.png"
+            data-full="https://dtsvkkjw40x57.cloudfront.net/87xnull/assets/4832/FhBQHKcgSv6RdeM52Bh8_amazon-device.png"
+            srcset="https://dtsvkkjw40x57.cloudfront.net/174xnull/assets/4832/FhBQHKcgSv6RdeM52Bh8_amazon-device.png 2x"
+            data-controller="progressive"
+            data-target="progressive.image"
+            class="image preview"
+            alt="Amazon | Experience Citrix across all platforms" />
+        </a>
+      
+      
+        
+        <a href="/#all_platforms" class="all-platforms--apple-tv">
+          <img
+            src="https://dtsvkkjw40x57.cloudfront.net/15xnull/assets/4832/Y8vyJTmMQbuki9wEf7P8_apple-tv-device.png"
+            data-full="https://dtsvkkjw40x57.cloudfront.net/198xnull/assets/4832/Y8vyJTmMQbuki9wEf7P8_apple-tv-device.png"
+            srcset="https://dtsvkkjw40x57.cloudfront.net/396xnull/assets/4832/Y8vyJTmMQbuki9wEf7P8_apple-tv-device.png 2x"
+            data-controller="progressive"
+            data-target="progressive.image"
+            class="image preview"
+            alt="AppleTV | Experience Citrix across all platforms" />
+        </a>
+      
+      
+        
+        <a href="/#all_platforms" class="all-platforms--roku-tv">
+          <img
+            src="https://dtsvkkjw40x57.cloudfront.net/15xnull/assets/4832/UirvgS5MQuIp1AHtbKlX_roku-tv-device.png"
+            data-full="https://dtsvkkjw40x57.cloudfront.net/171xnull/assets/4832/UirvgS5MQuIp1AHtbKlX_roku-tv-device.png"
+            srcset="https://dtsvkkjw40x57.cloudfront.net/342xnull/assets/4832/UirvgS5MQuIp1AHtbKlX_roku-tv-device.png 2x"
+            data-controller="progressive"
+            data-target="progressive.image"
+            class="image preview"
+            alt="RokuTV | Experience Citrix across all platforms" />
+        </a>
+      
+    </div>
+    <div class="all-platforms--available">
+      <div class="all-platforms--available-blocks">
+        
+          <a href="/#all_platforms" class="all-platforms--available-block all-platforms--available-block-iphone">
+            <svg xmlns="http://www.w3.org/2000/svg" width="89" height="20" viewBox="0 0 89 20">
+              <path fill="#000" fill-rule="evenodd" d="M13.442 10.834c.028 2.96 2.628 3.94 2.653 3.957-.02.07-.408 1.406-1.362 2.778-.827 1.19-1.679 2.376-3.026 2.401-1.33.023-1.75-.779-3.262-.775-1.517 0-1.988.756-3.24.8-1.304.05-2.295-1.285-3.121-2.47C.383 15.1-.914 10.672.824 7.673c.868-1.488 2.414-2.424 4.09-2.451 1.28-.022 2.485.847 3.262.847.782 0 2.247-1.044 3.789-.894.641.026 2.451.255 3.615 1.934-.094.056-2.161 1.247-2.138 3.725m-2.49-7.263c-.687.825-1.818 1.471-2.925 1.383-.153-1.12.401-2.291 1.042-3.024.711-.824 1.915-1.438 2.91-1.483.127 1.148-.34 2.297-1.026 3.124zm11.794-2.405c.316 0 .588.109.81.334.228.223.34.49.34.803 0 .323-.112.582-.34.792-.222.217-.494.319-.81.319-.322 0-.59-.102-.803-.32a1.048 1.048 0 0 1-.322-.79c0-.314.106-.581.322-.804.214-.225.48-.334.803-.334zm-.652 18.531V6.364h1.326v13.333h-1.326zM34.098 9.61c-.94.78-2.247 1.164-3.911 1.164-.446 0-.875-.017-1.267-.05a6.125 6.125 0 0 1-1.068-.195V2.166c.264-.059.612-.107 1.04-.153.435-.046.948-.072 1.55-.072.747 0 1.43.09 2.047.269.618.177 1.154.43 1.609.774a3.49 3.49 0 0 1 1.036 1.32c.241.539.363 1.166.363 1.888 0 1.503-.467 2.639-1.4 3.417m1.318-7.22c.44.44.786.968 1.03 1.578.248.618.367 1.32.367 2.117 0 .96-.164 1.802-.513 2.525a5.229 5.229 0 0 1-1.416 1.82 5.938 5.938 0 0 1-2.127 1.099 9.502 9.502 0 0 1-2.687.364c-.845 0-1.585-.07-2.217-.2v8.003h-1.315v-18.5A32.846 32.846 0 0 1 28.33.946a18.921 18.921 0 0 1 2.164-.114c1.128 0 2.096.134 2.91.403.816.268 1.485.658 2.01 1.154zM47.24 7.02c.487.391.91.947 1.265 1.667.356.725.533 1.684.533 2.884v8.125H47.72v-7.977c0-.59-.06-1.159-.184-1.704a4.147 4.147 0 0 0-.605-1.446 3.095 3.095 0 0 0-1.108-1.001c-.461-.248-1.024-.374-1.701-.374-.959 0-1.782.29-2.485.873a4.652 4.652 0 0 0-1.476 2.125c-.132.37-.195.806-.195 1.304v8.2h-1.32V0h1.32v8.695h.054a4.962 4.962 0 0 1 1.768-1.91c.748-.469 1.65-.7 2.701-.7.318 0 .728.057 1.25.179.515.119 1.015.373 1.501.756zM61.7 15.361c-.248.722-.582 1.34-1.011 1.859a4.654 4.654 0 0 1-1.55 1.222 4.25 4.25 0 0 1-1.935.448c-.712 0-1.364-.148-1.94-.448a4.54 4.54 0 0 1-1.5-1.222c-.425-.518-.75-1.133-.986-1.844-.237-.713-.349-1.485-.349-2.322 0-.699.09-1.405.282-2.115.182-.698.479-1.329.879-1.882a4.853 4.853 0 0 1 1.52-1.361c.606-.356 1.336-.532 2.177-.532.859 0 1.599.19 2.205.572.606.376 1.1.858 1.48 1.428.371.578.648 1.201.826 1.878.177.671.262 1.318.262 1.93 0 .871-.121 1.666-.36 2.39m-.013-7.432a6.577 6.577 0 0 1 1.249 2.167c.3.842.445 1.784.445 2.817 0 1.246-.183 2.314-.553 3.21-.378.904-.868 1.636-1.48 2.21a5.715 5.715 0 0 1-2.018 1.261 6.36 6.36 0 0 1-2.198.405 5.974 5.974 0 0 1-2.368-.47 5.399 5.399 0 0 1-1.917-1.38c-.545-.6-.973-1.328-1.28-2.165-.308-.84-.462-1.791-.462-2.85 0-1.144.17-2.158.505-3.038.337-.88.793-1.62 1.37-2.224a5.93 5.93 0 0 1 1.98-1.36 6.1 6.1 0 0 1 2.343-.457c.893 0 1.72.163 2.462.484a5.415 5.415 0 0 1 1.922 1.39zm12.398-.91c.494.391.92.955 1.278 1.682.358.733.531 1.706.531 2.928v8.066H74.58v-7.943c0-.597-.068-1.174-.184-1.727a4.197 4.197 0 0 0-.609-1.457 3.059 3.059 0 0 0-1.123-1.001c-.467-.248-1.039-.374-1.712-.374-.94 0-1.764.285-2.476.862a4.32 4.32 0 0 0-1.457 2.19c-.13.357-.198.746-.198 1.17v8.28H65.5V9.55c0-.627-.014-1.18-.026-1.663a83.52 83.52 0 0 0-.083-1.524h1.289v2.355h.11c.357-.728.928-1.353 1.717-1.866.784-.51 1.72-.768 2.81-.768.315 0 .735.058 1.25.178.513.12 1.018.375 1.518.758zm5.281 4.815c.05-.523.174-1.06.365-1.607.183-.55.456-1.055.81-1.512a4.418 4.418 0 0 1 1.316-1.132c.524-.296 1.14-.447 1.85-.447.783 0 1.425.154 1.933.462.5.308.906.695 1.199 1.158.3.468.508.975.623 1.525a8.15 8.15 0 0 1 .165 1.553h-8.26zm8.679-3.496a5.013 5.013 0 0 0-1.558-1.591c-.663-.442-1.536-.664-2.627-.664-.844 0-1.621.164-2.346.499a5.266 5.266 0 0 0-1.87 1.443c-.52.624-.934 1.38-1.236 2.257-.3.878-.446 1.874-.446 2.98 0 .983.143 1.88.43 2.708a5.991 5.991 0 0 0 1.237 2.117 5.575 5.575 0 0 0 1.942 1.386c.757.33 1.614.497 2.573.497 1.12 0 2.027-.104 2.71-.311.685-.205 1.158-.387 1.42-.528l-.338-1.022c-.375.169-.851.332-1.419.503-.572.167-1.31.247-2.208.247a5.73 5.73 0 0 1-1.926-.321 3.99 3.99 0 0 1-1.6-1.048c-.458-.477-.823-1.1-1.095-1.857-.274-.749-.41-1.661-.41-2.757h9.695c.024-.148.027-.264.027-.376v-.442c0-.499-.062-1.087-.196-1.773a5.915 5.915 0 0 0-.76-1.947z"/>
+            </svg>
+          </a>
+        
+        
+          <a href="/#all_platforms" class="all-platforms--available-block all-platforms--available-block-android">
+            <svg xmlns="http://www.w3.org/2000/svg" width="92" height="19" viewBox="0 0 92 19">
+              <path fill="#77C059" fill-rule="evenodd" d="M55.245 8.166c-2.371 0-3.417 1.168-3.417 2.824v7.744H48.29v-7.65c.02-3.19 1.95-6.327 6.955-6.327M0 11.922c0-.994.174-1.92.522-2.781.349-.86.836-1.61 1.463-2.248a6.747 6.747 0 0 1 2.25-1.504c.872-.364 1.829-.545 2.869-.545.789 0 1.506.11 2.152.332.645.222 1.27.586 1.873 1.091V5.11h3.538v13.624H11.13v-1.158c-.603.506-1.228.87-1.873 1.091-.646.222-1.363.333-2.152.333-1.04 0-1.997-.182-2.87-.546a6.746 6.746 0 0 1-2.25-1.503 6.832 6.832 0 0 1-1.462-2.248A7.341 7.341 0 0 1 0 11.922zm7.563 3.898c.279 0 .571-.029.878-.086a4.22 4.22 0 0 0 .926-.293c.311-.138.615-.322.913-.552.297-.23.58-.515.85-.852v-4.23a4.884 4.884 0 0 0-.85-.846 4.794 4.794 0 0 0-.913-.552 4.025 4.025 0 0 0-.926-.3 4.753 4.753 0 0 0-.878-.086c-.547 0-1.06.098-1.539.293a3.77 3.77 0 0 0-1.246.818 3.8 3.8 0 0 0-.83 1.238c-.199.474-.299.991-.299 1.55s.1 1.075.3 1.55c.2.474.476.887.829 1.237.352.35.768.623 1.246.818.478.196.992.293 1.54.293zm15.948-7.613c-1.676.012-3.132 1.127-3.132 2.783v7.744H16.84v-7.65c.02-3.19 2.912-6.197 6.62-6.24h.098c3.708.043 6.6 3.05 6.62 6.24v7.65h-3.538V10.99c0-1.656-1.456-2.771-3.132-2.783h.002zm8.343 3.715c0-.994.174-1.92.523-2.781.348-.86.835-1.61 1.462-2.248a6.747 6.747 0 0 1 2.25-1.504c.872-.364 1.829-.545 2.869-.545.79 0 1.509.11 2.159.332.65.222 1.272.581 1.866 1.078V1.025h3.538v17.709h-3.538V17.59c-.594.505-1.216.867-1.866 1.084-.65.217-1.37.326-2.16.326-1.04 0-1.996-.182-2.868-.546a6.746 6.746 0 0 1-2.25-1.503 6.832 6.832 0 0 1-1.462-2.248 7.341 7.341 0 0 1-.523-2.781zm7.564 3.898c.278 0 .57-.029.877-.086a4.22 4.22 0 0 0 .926-.293c.311-.138.616-.322.913-.552.297-.23.58-.515.85-.852v-4.23a4.884 4.884 0 0 0-.85-.846 4.794 4.794 0 0 0-.913-.552 4.025 4.025 0 0 0-.926-.3 4.753 4.753 0 0 0-.877-.086c-.548 0-1.061.098-1.54.293a3.77 3.77 0 0 0-1.246.818 3.8 3.8 0 0 0-.829 1.238c-.2.474-.3.991-.3 1.55s.1 1.075.3 1.55c.2.474.476.887.829 1.237.353.35.768.623 1.246.818.479.196.992.293 1.54.293zm23.671 0c.53 0 1.029-.095 1.498-.286a3.693 3.693 0 0 0 2.047-2.036c.2-.474.3-1 .3-1.576 0-.568-.102-1.089-.307-1.564a3.817 3.817 0 0 0-2.061-2.042 3.772 3.772 0 0 0-1.477-.293 3.858 3.858 0 0 0-2.723 1.105 3.873 3.873 0 0 0-1.135 2.794c0 .576.1 1.102.3 1.576a3.693 3.693 0 0 0 2.048 2.036c.468.19.972.286 1.51.286zm0 3.18a7.943 7.943 0 0 1-2.91-.532 7.44 7.44 0 0 1-2.39-1.484 7.007 7.007 0 0 1-1.615-2.248 6.697 6.697 0 0 1-.592-2.814c0-.985.197-1.907.592-2.768.394-.86.93-1.61 1.609-2.248a7.56 7.56 0 0 1 2.388-1.51 7.742 7.742 0 0 1 2.918-.552 7.69 7.69 0 0 1 2.912.552 7.58 7.58 0 0 1 2.381 1.51 7.158 7.158 0 0 1 1.61 2.248c.394.86.591 1.783.591 2.768 0 1.011-.197 1.949-.592 2.814a7.007 7.007 0 0 1-1.616 2.248 7.46 7.46 0 0 1-2.381 1.484 7.888 7.888 0 0 1-2.905.532zM73.937 4.043c-.286 0-.557-.054-.813-.16a2.184 2.184 0 0 1-.671-.437 2.078 2.078 0 0 1-.457-.642 1.882 1.882 0 0 1 0-1.56c.112-.247.264-.463.457-.647.192-.184.416-.33.671-.437.256-.107.527-.16.813-.16a2.165 2.165 0 0 1 1.498.597c.193.184.345.4.457.648a1.882 1.882 0 0 1 0 1.56 2.079 2.079 0 0 1-.456.641c-.193.184-.42.33-.679.436-.26.107-.533.16-.82.16zM72.168 5.11h3.538v13.624h-3.538V5.11zm5.165 6.812c0-.994.174-1.92.522-2.781.348-.86.836-1.61 1.463-2.248a6.747 6.747 0 0 1 2.25-1.504c.872-.364 1.829-.545 2.869-.545.789 0 1.509.11 2.159.332.65.222 1.272.581 1.866 1.078V1.025H92v17.709h-3.538V17.59c-.594.505-1.216.867-1.866 1.084-.65.217-1.37.326-2.16.326-1.04 0-1.996-.182-2.869-.546a6.746 6.746 0 0 1-2.25-1.503 6.832 6.832 0 0 1-1.462-2.248 7.341 7.341 0 0 1-.522-2.781zm7.563 3.898c.279 0 .571-.029.878-.086a4.22 4.22 0 0 0 .926-.293c.311-.138.615-.322.912-.552.298-.23.58-.515.85-.852v-4.23a4.884 4.884 0 0 0-.85-.846 4.794 4.794 0 0 0-.912-.552 4.025 4.025 0 0 0-.926-.3 4.753 4.753 0 0 0-.878-.086c-.548 0-1.06.098-1.539.293a3.77 3.77 0 0 0-1.247.818 3.8 3.8 0 0 0-.828 1.238c-.2.474-.3.991-.3 1.55s.1 1.075.3 1.55c.2.474.476.887.828 1.237.353.35.769.623 1.247.818.478.196.991.293 1.54.293z"/>
+            </svg>
+          </a>
+        
+        
+          <a href="/#all_platforms" class="all-platforms--available-block all-platforms--available-block-apple-tv">
+            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="20" viewBox="0 0 42 20">
+              <path fill="#000" fill-rule="evenodd" d="M8.265 5.739c.673 0 1.924-.93 3.552-.93 2.802 0 3.904 2 3.904 2s-2.156 1.106-2.156 3.79c0 3.027 2.685 4.07 2.685 4.07s-1.877 5.301-4.413 5.301c-1.164 0-2.07-.788-3.297-.788-1.25 0-2.491.817-3.3.817C2.926 20 0 14.971 0 10.93 0 6.95 2.476 4.865 4.798 4.865c1.51 0 2.682.874 3.467.874zm.701-3.999C10.276.008 12.097 0 12.097 0s.271 1.629-1.03 3.197c-1.39 1.675-2.969 1.4-2.969 1.4s-.296-1.316.868-2.857zm21.79 3.154l3.38 9.187c.286.72.542 1.398.767 2.034.225.637.44 1.264.645 1.88h.061c.205-.595.425-1.218.661-1.865.235-.647.497-1.33.783-2.05l3.41-9.186H42L36.131 19.69h-1.26L29.22 4.894h1.536zm-6.453-3.267v3.268h4.086v1.171h-4.086v9.649c0 .987.158 1.741.476 2.266.318.524.865.785 1.644.785.37 0 .687-.02.953-.061a4.14 4.14 0 0 0 .676-.154l.154 1.11c-.492.225-1.148.339-1.967.339-.676 0-1.234-.114-1.674-.34a2.643 2.643 0 0 1-1.045-.94c-.256-.4-.435-.883-.538-1.448a10.23 10.23 0 0 1-.154-1.835v-9.37h-2.427V4.894h2.427V2.18l1.475-.554z"/>
+            </svg>
+          </a>
+        
+        
+          <a href="/#all_platforms" class="all-platforms--available-block all-platforms--available-block-roku-tv">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="19" viewBox="0 0 64 19">
+              <path fill="#6D3998" fill-rule="evenodd" d="M43.566 4.063l-6.008 5.745V4.044h-5.216v14.648h5.216V12.75l6.273 5.942h6.564l-7.972-7.623 6.603-6.312v8.693c0 2.886 1.815 5.55 6.386 5.55 2.17 0 4.162-1.177 5.13-2.242l2.345 1.934H64V4.063h-5.215v9.471c-.588.98-1.406 1.597-2.67 1.597-1.284 0-1.872-.727-1.872-3.054V4.063H43.566zM17.414 18.706h-5.919L6.797 12.47h-1.58v6.222H0V0h7.472c4.308 0 7.824 2.801 7.824 6.248 0 2.101-1.348 3.979-3.4 5.127l5.518 7.33M10.08 6.249c0-1.74-1.463-3.14-3.251-3.14H5.216v6.25H6.83c1.788 0 3.25-1.4 3.25-3.11m21.247 5.128c0 4.234-3.601 7.624-8.03 7.624-4.426 0-8-3.39-8-7.624 0-4.23 3.574-7.623 8-7.623 4.429 0 8.03 3.392 8.03 7.623m-8.03-4.007c-1.377 0-2.548 1.79-2.548 4.007 0 2.216 1.171 4.009 2.549 4.009 1.41 0 2.58-1.793 2.58-4.01 0-2.215-1.17-4.006-2.58-4.006"/>
+            </svg>
+          </a>
+        
+        
+          <a href="/#all_platforms" class="all-platforms--available-block all-platforms--available-block-android-tv">
+            <svg xmlns="http://www.w3.org/2000/svg" width="121" height="19" viewBox="0 0 121 19">
+              <g fill="none" fill-rule="nonzero">
+                  <path fill="#77C059" d="M54.88 8.166c-2.356 0-3.394 1.168-3.394 2.824v7.744H47.97v-7.65c.02-3.19 1.936-6.327 6.908-6.327M0 11.922c0-.994.173-1.92.519-2.781.346-.86.83-1.61 1.453-2.248a6.7 6.7 0 0 1 2.234-1.504c.868-.364 1.818-.545 2.85-.545.785 0 1.497.11 2.139.332.64.222 1.261.586 1.86 1.091V5.11h3.515v13.624h-3.514v-1.158c-.6.506-1.22.87-1.861 1.091-.642.222-1.354.333-2.138.333-1.033 0-1.983-.182-2.85-.546a6.699 6.699 0 0 1-2.235-1.503 6.837 6.837 0 0 1-1.453-2.248A7.384 7.384 0 0 1 0 11.922zm7.513 3.898c.277 0 .568-.029.872-.086.305-.058.611-.156.92-.293.31-.138.611-.322.907-.552.295-.23.576-.515.844-.852v-4.23a4.868 4.868 0 0 0-.844-.846 4.756 4.756 0 0 0-.907-.552 3.98 3.98 0 0 0-.92-.3 4.691 4.691 0 0 0-.872-.086c-.544 0-1.054.098-1.529.293a3.743 3.743 0 0 0-2.061 2.056 3.98 3.98 0 0 0-.298 1.55c0 .559.1 1.075.298 1.55a3.743 3.743 0 0 0 2.062 2.056c.474.195.984.292 1.528.292zm15.843-7.613c-1.666.012-3.112 1.127-3.112 2.783v7.744h-3.515v-7.65c.02-3.19 2.893-6.197 6.576-6.24h.099c3.683.043 6.556 3.05 6.576 6.24v7.65h-3.515V10.99c0-1.656-1.446-2.771-3.112-2.783h.003zm8.288 3.715c0-.994.173-1.92.519-2.781.345-.86.83-1.61 1.452-2.248a6.7 6.7 0 0 1 2.235-1.504c.867-.364 1.817-.545 2.85-.545.785 0 1.5.11 2.145.332.646.222 1.264.581 1.854 1.078V1.025h3.515v17.709h-3.515V17.59c-.59.505-1.208.867-1.854 1.084-.646.217-1.36.326-2.145.326-1.033 0-1.983-.182-2.85-.546a6.699 6.699 0 0 1-2.235-1.503 6.837 6.837 0 0 1-1.452-2.248 7.384 7.384 0 0 1-.52-2.781zm7.513 3.898c.277 0 .567-.029.872-.086.304-.058.61-.156.92-.293.309-.138.611-.322.906-.552.295-.23.577-.515.844-.852v-4.23a4.867 4.867 0 0 0-.844-.846 4.756 4.756 0 0 0-.906-.552 3.98 3.98 0 0 0-.92-.3 4.691 4.691 0 0 0-.872-.086c-.544 0-1.054.098-1.529.293a3.743 3.743 0 0 0-2.062 2.056 3.98 3.98 0 0 0-.297 1.55c0 .559.1 1.075.297 1.55a3.743 3.743 0 0 0 2.062 2.056c.475.195.985.292 1.53.292zm23.515 0c.526 0 1.022-.095 1.488-.286.466-.19.872-.459 1.218-.805.345-.346.618-.756.816-1.23.198-.475.297-1 .297-1.577 0-.568-.101-1.089-.304-1.564a3.818 3.818 0 0 0-2.048-2.042 3.726 3.726 0 0 0-1.467-.293 3.81 3.81 0 0 0-2.705 1.105c-.346.346-.62.756-.823 1.23a3.935 3.935 0 0 0-.304 1.564c0 .576.099 1.102.297 1.576.198.475.47.885.816 1.231.346.346.752.614 1.218.805.466.19.966.286 1.501.286zm0 3.18a7.844 7.844 0 0 1-2.891-.532 7.384 7.384 0 0 1-2.373-1.484 7.006 7.006 0 0 1-1.606-2.248 6.735 6.735 0 0 1-.588-2.814c0-.985.196-1.907.588-2.768.392-.86.925-1.61 1.599-2.248a7.504 7.504 0 0 1 2.373-1.51 7.647 7.647 0 0 1 2.898-.552c1.024 0 1.988.184 2.892.552a7.524 7.524 0 0 1 2.366 1.51 7.157 7.157 0 0 1 1.599 2.248c.392.86.588 1.783.588 2.768 0 1.011-.196 1.949-.588 2.814a7.006 7.006 0 0 1-1.605 2.248 7.403 7.403 0 0 1-2.367 1.484 7.79 7.79 0 0 1-2.885.532zM73.45 4.043c-.285 0-.554-.054-.808-.16a2.168 2.168 0 0 1-.667-.437 2.078 2.078 0 0 1-.454-.642 1.893 1.893 0 0 1 0-1.56c.111-.247.262-.463.454-.647A2.17 2.17 0 0 1 72.64.16c.254-.107.523-.16.808-.16a2.15 2.15 0 0 1 1.488.597c.191.184.342.4.454.648a1.893 1.893 0 0 1 0 1.56 2.078 2.078 0 0 1-.454.641 2.148 2.148 0 0 1-1.488.597zM71.69 5.11h3.515v13.624H71.69V5.11zm5.13 6.812c0-.994.174-1.92.52-2.781.346-.86.83-1.61 1.452-2.248a6.7 6.7 0 0 1 2.235-1.504c.867-.364 1.817-.545 2.85-.545.785 0 1.5.11 2.145.332.646.222 1.264.581 1.854 1.078V1.025h3.515v17.709h-3.515V17.59c-.59.505-1.208.867-1.854 1.084-.646.217-1.36.326-2.144.326-1.034 0-1.984-.182-2.85-.546a6.699 6.699 0 0 1-2.236-1.503 6.837 6.837 0 0 1-1.452-2.248 7.384 7.384 0 0 1-.52-2.781zm7.514 3.898c.277 0 .567-.029.872-.086.304-.058.611-.156.92-.293.309-.138.611-.322.906-.552.295-.23.577-.515.844-.852v-4.23a4.867 4.867 0 0 0-.844-.846 4.756 4.756 0 0 0-.906-.552 3.98 3.98 0 0 0-.92-.3 4.691 4.691 0 0 0-.872-.086c-.544 0-1.054.098-1.529.293a3.743 3.743 0 0 0-2.062 2.056 3.98 3.98 0 0 0-.297 1.55c0 .559.1 1.075.297 1.55a3.743 3.743 0 0 0 2.062 2.056c.475.195.985.292 1.53.292z"/>
+                  <path fill="#868686" d="M99.504 4.987h5.019V3.781h-5.019V0H98.25v13.177c-.007.112 0 .627 0 .627l.04.43c.366 2.648 2.71 4.694 5.56 4.712l.673.002v-1.206h-.537l-.305-.02a4.489 4.489 0 0 1-1.955-.542c-1.326-.724-2.222-2.095-2.222-3.668V4.987zM113.794 18.948h-.658L105.93 3.781h1.255L113.465 17l6.28-13.22H121z"/>
+              </g>
+            </svg>
+          </a>
+        
+        
+          <a href="/#all_platforms" class="all-platforms--available-block all-platforms--available-block-fire-tv">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="20" viewBox="0 0 60 20">
+              <path fill="#FC4C03" fill-rule="evenodd" d="M46.283 8.59h-3.65v11.13h-2.517V8.59h-3.974V6.618H46.94l-.656 1.97zM11.521.704c.932 0 1.687.723 1.687 1.614 0 .891-.755 1.614-1.687 1.614S9.835 3.21 9.835 2.32c0-.891.754-1.614 1.686-1.614zm-1.294 19.11h2.587V6.596h-2.587v13.22zm4.901-13.22h2.194l.266 1.634c1.775-1.96 3.902-2.39 5.512-1.57l-.884 2.203c-1.612-.849-3.029-.071-4.507 1.37v9.584h-2.58V6.596zm13.13 1.644c1.988 0 3.054 1.84 3.054 3.607l-6.19.014c0-2.044 1.384-3.621 3.137-3.621zm-.026-1.957c3.784 0 5.718 2.775 5.735 6.54.001.473-.004.412-.004.882h-8.86c.144 1.28.425 2.326 1.272 3.112 1.434 1.333 3.623 1.63 6.512.254l.775 1.725c-2.154 1.377-6.21 1.804-8.584.043-1.57-1.078-2.58-3.178-2.58-5.71 0-4.27 2.479-6.846 5.734-6.846zm-23.774.282h3.531l-.675 2.008H4.458v11.244h-2.61V8.572H0V6.564h1.847V4.16c0-1.604.672-2.754 1.682-3.445C4.89-.226 7.101-.17 8.502.488l-.544 2c-1.559-.573-3.5-.581-3.5 1.865v2.21zM54.486 19.72h-2.045L46.908 6.618h2.72l2.419 6.019c.504 1.249.99 2.478 1.413 3.719.426-1.256.913-2.465 1.42-3.72l2.41-6.018H60L54.486 19.72z"/>
+            </svg>
+          </a>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px),
+  only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px),
+  only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 320px),
+  only screen and (        min-device-pixel-ratio: 2)      and (min-width: 320px),
+  only screen and (                min-resolution: 192dpi) and (min-width: 320px),
+  only screen and (                min-resolution: 2dppx)  and (min-width: 320px) {
+    .all-platforms--inner {
+      background: url('https://dtsvkkjw40x57.cloudfront.net/1599xnull/assets/4832/sTDZxKzwR97PyU1JZKwJ_all_devices_pavo.jpg') center no-repeat !important;
+    }
+  }
+</style>
+
+      </div>
+      <div class="tabs--content" data-target="my-tabs.commitments">
+        <div class="no-commitments">
+  <div class="container">
+    <div class="watch-anywhere--content">
+      <div>
+        <h2>If you decide our service isn't for you - no problem. Cancel online anytime.</h2>
+      </div>
+      <div>
+        <a href="/join" class="btn btn--primary btn--width">Sign up now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+</section>
+-->
+
+    </div>
+    <section class="footer-section-wrapper">
+            <footer class="footer-collapse px-1 py-3 _responsive-footer">
+    
+                    <div class="footer-big">
+                        <!-- start .container -->
+                        <div class="container1">
+                            <div class="row">
+                
+                                <!-- <hr style="color: #fff; border: 1px solid #fff; width: 100%;"/> -->
+                                <!-- end /.col-md-4 -->
+                                <div class="col-md-12 col-sm-12 col-lg-12">
+                                    <div class="footer-widget social-container">
+                                        <div class="footer-menu footer-menu--1">
+                                            <div class="social-footer">
+                                                <h3>infiniti social</h3>
+                                                <ul>
+                                                    <li>
+                                                        <a href="https://www.facebook.com/INFINITIMiddleEast/"> <img src="https://s3.amazonaws.com/unode1/assets/7471/5s25jHdWSaOAmSJyQIuH_facebook-icon.png" alt=""></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://twitter.com/infinitime?lang=en"> <img src="https://s3.amazonaws.com/unode1/assets/7471/cTomAXGWQ2G5YTEZtNks_twitter-icon.png" alt=""></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://www.instagram.com/infinitimiddleeast"> <img src="https://s3.amazonaws.com/unode1/assets/7471/koA4aYrhSCG13u86wsbU_instagram-icon.png" alt=""></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://www.youtube.com/user/InfinitiMiddleEast"> <img src="https://s3.amazonaws.com/unode1/assets/7471/w3Yfcul8TXagZjdaS0x5_youtube-icon.png" alt=""></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- end /.footer-menu -->
+                                    </div>
+                                    <!-- Ends: .footer-widget -->
+                                </div>
+                                <!-- end /.col-md-3 -->
+                
+                                <div class="col-md-12 col-sm-12 col-lg-12">
+                                    <div class="footer-widget c1-container">
+                                        <div class="footer-menu">
+                
+                                            <ul class="copy-right-section-list">
+                                                <li>
+                                                    <a href="#">Copyright</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Privacy</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">© infiniti 2019</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- end /.footer-menu -->
+                                    </div>
+                                    <!-- Ends: .footer-widget -->
+                                </div>
+                                <!-- end /.col-lg-3 -->
+                
+                             
+                
+                            </div>
+                            <!-- end /.row -->
+                        </div>
+                        <!-- end /.container -->
+                    </div>
+                    <!-- end /.footer-big -->
+                
+                </footer>
+    </section>
+    
+
+<div class="modal fade video-modal infiniti-video-modal-1" id="videomodal">
+    <div class="modal-dialog modal-lg">
+        <span class="close-call">
+            <i class="fa fa-close remove-frame"  data-dismiss="modal"></i>
+        </span>
+        <span class="next-page-container">
+           <p>
+              next Episode
+           </p>    
+            <img src="https://s3.amazonaws.com/unode1/assets/7471/iZR99GpvSNqzrak0RpFM_next-arrow.png" alt="">
+          </span>
+        <div class="modal-content" style="    background: #25252500;">
+          <div class="loader_wrapper"><div class="lds-ripple"><div></div><div></div></div></div>
+            <iframe src="" id="program-page" style="padding:0; border: 0"></iframe>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title h4" id="myExtraLargeModalLabel">Extra large modal</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+    </div>
+  </div>
+</div>
+
+  </main>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</body>
+</html>
